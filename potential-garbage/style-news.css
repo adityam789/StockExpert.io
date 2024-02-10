@@ -1,0 +1,92 @@
+@media (min-width: 992px) {
+  .card {
+    width: 90%;
+    max-width: 800px;
+  }
+}
+
+body {
+  background-color: #f7f6f9;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.custom-bg {
+  background-color: #f7f6f9;
+}
+
+.sidebar {
+  height: 100%;
+  width: 252px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar #logo {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+.sidebar a {
+  padding: 10px 8px 10px 30px;
+  margin: 1em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #84828a;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #efe9ff;
+  color: #6425fe;
+}
+
+#logout-btn {
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+}
+
+#logout-btn>a>object {
+  width: 15px;
+}
+
+#logout-btn>a{
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.topbar {
+  height: 112px;
+  margin-left: 14em;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.topbar #welcome-msg {
+  margin: 0px;
+  padding-left: 3em;
+  font-size: 20px;
+}
+
+.topbar #profile-pic {
+  position: absolute;
+  right: 20px;
+}
+
+.content {
+  margin-left: 18em;
+  padding: 1px 16px;
+  height: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+}

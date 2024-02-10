@@ -1,0 +1,163 @@
+/* Default styles for all screens */
+
+body {
+    background-color: #f7f6f9;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 18em;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidebar #logo {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2em;
+  }
+  
+  .sidebar a {
+    padding: 10px 8px 10px 30px;
+    margin: 1em;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #84828a;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    background-color: #efe9ff;
+    color: #6425fe;
+  }
+  
+  #logout-btn {
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+  }
+  
+  #logout-btn>a>object {
+    width: 15px;
+  }
+  
+  #logout-btn>a {
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  #content-row {
+    margin-left: 0px;
+    width: 100%;
+    height: calc(100% - 20px - 1.5em);
+  }
+  
+  .topbar {
+    height: 4em;
+    margin-left: 18em;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .topbar #welcome-msg {
+    margin: 0px;
+    padding-left: 3em;
+    font-size: 20px;
+  }
+  
+  .topbar #profile-pic {
+    position: absolute;
+    right: 20px;
+  }
+  
+  .content {
+    margin-left: 18em;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  .main-content {
+    width: 100%;
+    padding: 0px 1em 1em 1em;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pill {
+    border-radius: 20px;
+    background-color: #f7f6f9;
+  }
+
+  .scrollable {
+    height: 100%;
+    overflow: scroll;
+  }
+  /* Media queries for smaller screens */
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: static;
+    }
+  
+    .sidebar #logo {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+  
+    .sidebar a {
+      padding: 10px 8px 10px 20px;
+      font-size: 20px;
+    }
+  
+    .sidebar a:hover {
+      background-color: #efe9ff;
+      color: #6425fe;
+    }
+  
+    #logout-btn {
+      position: static;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+  
+    #logout-btn>a>object {
+      width: 10px;
+    }
+  
+    #logout-btn>a {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .topbar {
+      margin-left: 0;
+    }
+  
+    .topbar #welcome-msg {
+      padding-left: 1em;
+      font-size: 16px;
+    }
+  
+    .topbar #profile-pic {
+      right: 10px;
+      width: 30px;
+    }
+  
+    .content {
+      margin-left: 0;
+    }
+  }
